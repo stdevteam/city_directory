@@ -1,0 +1,135 @@
+/* Start Global Styles */
+
+body {
+    font-size: 14px;
+    font-family: Arial,Tahoma,sans-serif;
+    color: #121212;
+    background-color: #fff;
+    margin: 0;
+    padding: 70px 0;
+}
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box;
+}
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+a, button {
+    cursor: pointer;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+    display: block;
+}
+.clearAfter:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+.contCenter {
+    max-width: 692px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* End Global Styles */
+
+/* Start Header Styles */
+
+header {
+    background-color: #f8e71c;
+    border: 1px solid #000;
+}
+header h1 {
+    font-size: 25px;
+    margin: 20px 0 25px;
+    text-align: center;
+    line-height: 20px;
+}
+/* End Header Styles */
+
+/* Start Main Section Styles */
+.cityList .listDescribe {
+    color: #6e6e6e;
+    text-align: center;
+    margin: 35px 0 60px 0;
+}
+.cityList ul {
+    list-style: none;
+    padding: 0;
+    width: 112.3%;
+    margin-left: -12.3%;
+    justify-content: space-between;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+}
+.cityList ul li {
+    width: 22.033%;
+    margin: 0 0 50px 11.3%;
+    padding-bottom: 18px;
+    border-bottom: 2px solid #979797;
+}
+.cityList ul li > *:not(img) {
+    display: block;
+}
+.cityList ul li span {
+    font-size: 18px;
+}
+.cityList ul li small {
+    font-size: 12px;
+}
+.cityList ul li.listLoader {
+    border-bottom: 0;
+    width: 88.7%;
+    text-align: center;
+}
+.cityList nav {
+    margin-top: 21px;
+    text-align: center;
+}
+.cityList nav button {
+    min-width: 85px;
+    font-weight: bold;
+    color: #fff;    
+    background-color: #bd10e0;
+    padding: 10px 12px;
+    border: 1px solid #979797;
+    border-radius: 8px;
+    outline: none;
+}
+.cityList nav button:hover,
+.cityList nav button:active {
+    border-color: #121212;
+}
+/* End Main Section Styles */
+
+
+/* ===Media Queries=== */
+/* Mobile screens */
+@media screen and (max-width: 692px) {
+    body {
+        padding: 0 0 45px 0;
+    }
+    .cityList .listDescribe {
+        margin: 25px 12px 50px 12px;
+    }
+    .cityList ul {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+    }
+    .cityList ul li {
+        width: 100%;
+        margin: 0 0 18px 0;
+        padding: 18px 30px;
+    }
+    .cityList ul li.listLoader {
+        width: 100%;
+    }
+}

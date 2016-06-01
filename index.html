@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>City Directory List</title>
+        <meta name="description" content="Here you can find the list of all the top cities in the world.">
+        <meta name="author" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <!-- Start Theme CSS -->
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- End Theme CSS -->
+
+        <!-- Start Favicon -->
+
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+        <!-- End Favicon -->
+    </head>
+    <body>
+
+        <!-- Start Centered Container -->        
+        <div class="contCenter">
+
+            <!-- Start Header -->            
+            <header>
+                <h1>
+                    Cities in the World
+                </h1>
+            </header>
+            <!-- End Header --> 
+
+            <!-- Start Main Content -->
+            <main>                
+                <section class="cityList">
+                    <p class="listDescribe">Below is a  list of all the top cities in the world. Feel free to browse.</p>
+                    <ul class="clearAfter" id="listContent">
+                        <li class="listLoader">
+                            <img src="images/loading.gif" alt="Loader">
+                        </li>
+                    </ul>
+                    <nav>
+                        <button id="prevPage">Previous</button>
+                        <button id="nextPage">Next</button>
+                    </nav>
+                </section>                
+            </main>
+            <!-- End Main Content -->
+
+        </div>
+        <!-- End Centered Container -->
+
+        <!-- Start Theme Script -->
+        <script type="text/javascript" src="js/app.js"></script>
+        <!-- End Theme Script -->
+    </body>
+</html>
